@@ -1,0 +1,49 @@
+.userContainer {
+  background-color: #d9d9d9;
+  border-radius: 1.562rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1.125rem 2.062rem;
+  margin-bottom: 4rem;
+  margin-inline: 2rem;
+
+  img {
+    max-width: 13.75rem;
+    border-radius: 50%;
+    border: 2px solid #005cff;
+  }
+
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h1 {
+      color: #005cff;
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 0.937rem;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .userContainer {
+    flex-direction: column;
+
+    img {
+      max-width: 10rem;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

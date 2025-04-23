@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  gap: 0.687rem;
+  align-items: center;
+  background-color: black;
+  margin: 0 auto;
+  padding: 1rem;
+
+  & > img {
+    width: 3.625rem;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 0.687rem;
+  }
+
+  .title {
+    color: white;
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    padding-bottom: 0;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .flex > img {
+      width: 5.25rem;
+    }
+  }
+}

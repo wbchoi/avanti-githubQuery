@@ -1,0 +1,41 @@
+.inputBox {
+  width: 31.43rem;
+  height: 3.875rem;
+  display: flex;
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 0.625rem;
+  margin-inline: 2rem;
+
+  input {
+    width: 100%;
+    border-radius: 0.625rem;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  button {
+    background-color: #005cff;
+    border: 1px solid #dddddd;
+    border-radius: 0.625rem;
+    padding: 1.125rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #0050db;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .inputBox {
+    width: 19rem;
+
+    input {
+      font-size: 1rem;
+    }
+  }
+}
